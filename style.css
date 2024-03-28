@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "space mono", serif;
 }
 
 :root {
@@ -11,11 +12,74 @@
     --green-400: #7f9d9f;
     --green-500: #5e7a7d;
     --green-600: #547878;
-    --green-700: #00474b;
+    --green-700: #3d6666;
+    --green-800: #00474b;
     --light-green: #26c2ae;
     --white: #ffffff;
 }
 
 body {
     background-color:#c5e4e7;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    padding-block:2.8rem;
+}
+
+main {
+    background-color: #ffffff;
+    padding: 2rem;
+}
+
+.conta {
+    margin-bottom: 2rem;
+}
+
+.conta label,
+.gorjeta label {
+    color: #5e7a7d;
+    font-weight: 700;
+}
+
+.conta div {
+     margin-top: 0.4rem;
+     background-color: #f3f9fa;
+     padding: 0.4rem 1,2rem;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     border-radius: 0.3125rem;
+}
+
+.conta input {
+    border: none;
+    text-align: right;
+    width: 100%;
+    background: none;
+    font-size: 1,5rem;
+    font-weight: 700;
+    color: #00474b;
+    outline: none;
+}
+
+.conta input::placeholder {
+    color: #9ebbbd;
+}
+
+.conta:has(input:focus) div {
+    outline: 2px solid #26c2ae;
+}
+
+.gorjeta div {
+    margin-top: 1rem;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.gorjeta #outra {
+    width: 100%;
 }
