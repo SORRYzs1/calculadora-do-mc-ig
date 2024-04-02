@@ -20,5 +20,9 @@ function receberQuantidadePessoas(evento) {
      } else {
         paragrafoErro.style.display = "none"
         divErro.setAttribute("id", "")
+        pessoas = Number(evento.target.value)
      }
 }
+
+const botoesgorjeta = document.querySelectorAll(".gorjeta input[type='number']")
+botoesgorjeta.forEach
